@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5432/em_test}
+    username: ${DATASOURCE_USERNAME:local}
+    password: ${DATASOURCE_PASSWORD:local}
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
